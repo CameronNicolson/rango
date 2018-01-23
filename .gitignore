@@ -103,3 +103,7 @@ myvenv
 
 # file managers 
 .DS_Store
+
+# db files
+db.sqlite3
+/tango_with_django_project/rango/migrations
