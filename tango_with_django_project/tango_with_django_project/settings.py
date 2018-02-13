@@ -35,6 +35,10 @@ ALLOWED_HOSTS = []
 
 LOGIN_URL = '/rango/login/'
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+
+SESSION_COOKIE_AGE = 1209600
+
 # Application definition
 
 INSTALLED_APPS = [
