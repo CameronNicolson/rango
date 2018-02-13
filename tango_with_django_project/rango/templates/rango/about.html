@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+
+{% block title_block %}
+	About Page
+{% endblock %}
+
+{% block body_block %}
 	Rango says here is the about page
 	<img width="250px" height="180px" src='{% static "images/banter.jpg" %}' alt="Picture of Lads On Tour" /> <br>
 	This tutorial has been put together by Cameron Nicolson.
 	<br>
 	<img src='{{ MEDIA_URL }}cat.jpg' />
-</body>
-</html>
+{% endblock %}
