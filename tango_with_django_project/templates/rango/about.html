@@ -7,8 +7,8 @@
 
 {% block body_block %}
 	Rango says here is the about page
-	<img width="250px" height="180px" src='{% static "images/banter.jpg" %}' alt="Picture of Lads On Tour" /> <br>
+	<img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" /> <br>
 	This tutorial has been put together by Cameron Nicolson.
 	<br>
-	<img src='{{ MEDIA_URL }}cat.jpg' />
+	<img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of cat" />
 {% endblock %}

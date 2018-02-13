@@ -1,3 +1,109 @@
-I found errors while running the automated tests in github repository: https://github.com/CameronNicolson/rango===========================================================================
+rango.tests_chapter4.Chapter4ViewTest.test_rango_picture_displayed
+E
+======================================================================
+ERROR: test_rango_picture_displayed (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Users\camer\Development\rango\tango_with_django_project\rango\temporal\tango_with_django_project\rango\tests_chapter4.py", line 34, in test_rango_picture_displayed
+    response = self.client.get(reverse('index'))
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 536, in get
+    **extra)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 340, in get
+    return self.generic('GET', path, secure=secure, **r)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 416, in generic
+    return self.request(**r)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 501, in request
+    six.reraise(*exc_info)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\camer\Development\rango\tango_with_django_project\rango\temporal\tango_with_django_project\rango\views.py", line 106, in index
+    context_dict['visits'] = request.session['visits']
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\contrib\sessions\backends\base.py", line 57, in __getitem__
+    return self._session[key]
+KeyError: 'visits'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.035s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter4.Chapter4ViewTest.test_cat_picture_displayed
+E
+======================================================================
+ERROR: test_cat_picture_displayed (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Users\camer\Development\rango\tango_with_django_project\rango\temporal\tango_with_django_project\rango\tests_chapter4.py", line 41, in test_cat_picture_displayed
+    response = self.client.get(reverse('about'))
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 536, in get
+    **extra)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 340, in get
+    return self.generic('GET', path, secure=secure, **r)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 416, in generic
+    return self.request(**r)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 501, in request
+    six.reraise(*exc_info)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\camer\Development\rango\tango_with_django_project\rango\temporal\tango_with_django_project\rango\views.py", line 115, in about
+    context_dict['visits'] = request.session['visits']
+NameError: name 'context_dict' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.036s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter4.Chapter4ViewTest.test_about_contain_image
+E
+======================================================================
+ERROR: test_about_contain_image (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Users\camer\Development\rango\tango_with_django_project\rango\temporal\tango_with_django_project\rango\tests_chapter4.py", line 47, in test_about_contain_image
+    self.client.get(reverse('index'))
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 536, in get
+    **extra)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 340, in get
+    return self.generic('GET', path, secure=secure, **r)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 416, in generic
+    return self.request(**r)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\test\client.py", line 501, in request
+    six.reraise(*exc_info)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\camer\Development\rango\tango_with_django_project\rango\temporal\tango_with_django_project\rango\views.py", line 106, in index
+    context_dict['visits'] = request.session['visits']
+  File "D:\Users\camer\Development\rango\myvenv\lib\site-packages\django\contrib\sessions\backends\base.py", line 57, in __getitem__
+    return self._session[key]
+KeyError: 'visits'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.039s
+
+FAILED (errors=1)
+===========================================================================
 
 
